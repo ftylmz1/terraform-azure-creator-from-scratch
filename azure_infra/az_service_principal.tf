@@ -18,6 +18,13 @@ resource "azuread_service_principal_password" "example" {
   service_principal_id = azuread_service_principal.example.object_id
 }
 
+resource "azurerm_role_assignment" "example" {
+  scope                = data.azurerm_subscription.primary.id
+  role_definition_name = "Contributor"
+  principal_id         = azuread_service_principal.example.object_id
+}
+
+
 resource "local_file" "foo" {
   filename = "${path.module}/${local.secret_file_path}"
   content  = <<EOT
