@@ -9,4 +9,8 @@ locals {
   storage_account_container_name = "terraformstate"
 
   data_factory_name = "DF-${var.env_appendix}"
+
+
+  databricks_workspace_name = "dev-workspace"
+  databricks_cluster_single_node_cluster_name = "Single Node"
 }

@@ -22,3 +22,4 @@ and put those environments in your host environment (WSL or Linux)
 A service principal has Contributor role that will be used for Data Engineering tasks <br/>
 A storage account that allow Data Engineers to store their Shared Terraform State files.<br/>
 An Azure Data Factory
+A Azure Databricks Workspace and Single Node Cluster (You will be charged because you will spin up a cluster)<br />
