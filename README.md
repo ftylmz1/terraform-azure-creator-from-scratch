@@ -8,10 +8,10 @@ Install terraform and Azure CLI on WSL or Linux
 ### LOGIN AZURE WITH YOUR ROOT ACCOUNT USING WEB UI
 
 Step 1 <br/>
-az login
+scripts/az_login.sh
 
 Step 2 <br/>
-terraform apply --auto-approve
+scripts/terraform_init_local_and_apply.sh
 
 Step 3 <br/>
 Get servicel principal environment variables from the file azure_infra/secrets/super_secret.env in the project <br/>

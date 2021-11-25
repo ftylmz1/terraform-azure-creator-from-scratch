@@ -30,5 +30,6 @@ provider "databricks" {
 
 module "azure_infra" {
   source = "./azure_infra"
+  env_appendix = var.env_appendix
 }
 
