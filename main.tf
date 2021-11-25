@@ -6,7 +6,7 @@ terraform {
       version = ">= 0.3.5"
     }
     azurerm = {
-      version = ">= 2.70.0"
+      version = ">= 2.1.0"
     }
   }
   #   backend "azurerm" {
@@ -16,8 +16,8 @@ terraform {
 
 provider "azurerm" {
   features {}
-  storage_use_azuread        = true
-  skip_provider_registration = true
+  # storage_use_azuread        = true
+  # skip_provider_registration = true
 }
 
 provider "databricks" {
